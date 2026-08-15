@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="2436" viewBox="0 0 1242 2436">
+  <rect width="1242" height="2436" fill="#101722"/>
+  <circle cx="621" cy="1000" r="255" fill="#182330" stroke="#293744" stroke-width="7"/>
+  <path d="M466 1128V872c0-29 36-42 55-19l208 248V864" fill="none" stroke="#BFEAD7" stroke-width="66" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M695 798c60 18 106 63 126 122" fill="none" stroke="#43D6E8" stroke-width="27" stroke-linecap="round"/>
+  <path d="M716 738c86 25 154 91 181 175" fill="none" stroke="#43D6E8" stroke-width="18" stroke-linecap="round" opacity="0.72"/>
+  <circle cx="466" cy="1128" r="29" fill="#43D6E8"/>
+  <circle cx="744" cy="864" r="29" fill="#43D6E8"/>
+  <text x="621" y="1375" text-anchor="middle" fill="#E8F1EE" font-family="sans-serif" font-size="92" font-weight="700" letter-spacing="12">NETORA</text>
+  <text x="621" y="1450" text-anchor="middle" fill="#9DB0B1" font-family="sans-serif" font-size="31" letter-spacing="3">NETWORK UTILITY FOR ANDROID</text>
+</svg>

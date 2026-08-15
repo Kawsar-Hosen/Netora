@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Netora",
+    "slug": "netora",
+    "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "netora",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.netora.networkutility",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#101722"
+      },
+      "permissions": [
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Netora to show the current Wi-Fi name and BSSID. Speed tests, mobile data diagnostics, public IP lookup, and server mapping work without this permission."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 1242,
+          "resizeMode": "contain",
+          "backgroundColor": "#101722",
+          "dark": {
+            "image": "./assets/splash.png",
+            "backgroundColor": "#101722"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

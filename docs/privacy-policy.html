@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Netora Privacy Policy</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f5f7f4;color:#102131}body{margin:0}.page{max-width:760px;margin:auto;padding:48px 22px 72px}header{border-bottom:1px solid #dde7e4;padding-bottom:24px;margin-bottom:28px}.mark{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.12em;color:#147d72}h1{font-size:2.2rem;line-height:1.1;margin:.65rem 0}.meta{color:#64757d}h2{font-size:1.1rem;margin-top:2rem}p{line-height:1.72;color:#485b64}code{font-size:.92em}@media(prefers-color-scheme:dark){:root{background:#101722;color:#e8f1ee}header{border-color:#293744}.mark{color:#bfead7}.meta,p{color:#9db0b1}}
+  </style>
+</head>
+<body><main class="page">
+  <header><div class="mark">NETORA</div><h1>Privacy Policy</h1><div class="meta">Effective August 15, 2026 · Android package <code>com.netora.networkutility</code></div></header>
+  <p>Netora is a local-first network diagnostic utility. This policy describes what the app reads, what information leaves the device, and what Netora stores.</p>
+  <h2>Information Netora handles</h2><p>Netora reads Android network state to identify whether Wi-Fi, mobile data, or no internet is active. When Android makes fields available, Netora may display Wi-Fi signal strength, link speed, frequency, channel, local IP, mobile carrier, and cellular generation. Speed tests measure download throughput, upload throughput, ping, jitter, and failed latency samples used as packet loss.</p>
+  <h2>Optional Wi-Fi identifiers</h2><p>Wi-Fi SSID and BSSID require Android foreground location permission. Netora requests this permission only after you choose Enable Wi-Fi name access in Privacy Settings. Netora does not request or read GPS coordinates. Denying permission does not affect speed tests or other diagnostics.</p>
+  <h2>Optional external network details</h2><p>When Public network details is enabled, Netora contacts IP lookup services to display public IP, IP version, ISP, ASN, and approximate IP-derived city/country. Results are held in memory for the current connection and are not written to history. Fallback providers are ipapi.co, ipwho.is, and ipinfo.io.</p>
+  <h2>Speed-test server and map</h2><p>Speed testing uses speed.cloudflare.com. Cloudflare Anycast selects the responding edge. Netora may use airport-data.com to resolve the edge code to city and coordinates. The map loads Leaflet resources from unpkg.com and CARTO/OpenStreetMap tiles. Server location is not your physical GPS location.</p>
+  <h2>Local storage</h2><p>Test history and preferences are stored locally in Android application storage. Netora has no account system and no Netora backend. You can delete individual results or clear history.</p>
+  <h2>Sharing, advertising, and analytics</h2><p>Netora contains no advertising, behavioral analytics, or tracking SDK. Netora does not sell personal information. External infrastructure providers receive standard request information when your device contacts their service.</p>
+  <h2>Security</h2><p>Netora uses HTTPS. Public IP/ISP/ASN results are not persisted by Netora. No secret API keys are embedded in the app.</p>
+  <h2>Children and changes</h2><p>Netora is a general network utility and is not directed to children. This policy may change when app features or providers change.</p>
+  <h2>Contact</h2><p>Before publication, add a monitored support email and host this document at a stable public HTTPS URL.</p>
+</main></body></html>

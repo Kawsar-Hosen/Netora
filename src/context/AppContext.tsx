@@ -5,6 +5,7 @@ import NetInfo from '@react-native-community/netinfo';
 import { readNetwork } from '@/data/network';
 import { fetchCurrentEdge, fetchIpInfo, type IpInfo } from '@/data/ipInfo';
 import { measureConnection } from '@/data/speedTest';
+import { maybeShowInterstitialAfterTest } from '@/ads/interstitial';
 import type { NetworkSnapshot, SpeedResult, SpeedUnit, TestServerInfo, TestState, ThemeMode } from '@/types/models';
 
 const initialTest: TestState = { phase: 'idle', progress: 0, metric: 'download', download: null, upload: null, ping: null, jitter: null, packetLoss: null, error: null, server: null };
@@ -56,6 +57,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setCurrentServer(result.server); setTest({ phase: 'complete', progress: 1, metric: 'upload', ...rounded, error: null, server: result.server });
       const serverName = result.server ? [result.server.name, result.server.city, result.server.country, result.server.colo].filter(Boolean).join(' · ') : 'Unavailable';
       setHistory(h => [{ id: String(Date.now()), date: new Date().toLocaleDateString([], { month: 'short', day: 'numeric' }), time: new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }), ...rounded, networkType: network.type, networkName: network.name, server: serverName }, ...h]);
+      const online = network.connected && network.internetReachable !== false;
+      setTimeout(() => maybeShowInterstitialAfterTest(online), 1500);
     } catch (error) { setTest({ ...initialTest, phase: 'error', error: error instanceof Error ? error.message : 'The speed test failed.' }); }
   };
   const value = { dark, theme, setTheme, unit, setUnit, network, history, test, currentServer, selectedServer, setSelectedServer, externalNetworkInfo, setExternalNetworkInfo, runTest, removeResult: (id: string) => setHistory(h => h.filter(x => x.id !== id)), clearHistory: () => setHistory([]), refreshNetwork, ipInfo, ipInfoState, refreshIpInfo };

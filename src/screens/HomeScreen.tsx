@@ -6,6 +6,7 @@ import { Card, Header, Pill, Screen } from '@/components/ui';
 import { ConnectionQualityCard } from '@/components/ConnectionQualityCard';
 import { MiniSpeedMeter } from '@/components/MiniSpeedMeter';
 import { NetworkSpeedMeter } from '@/components/NetworkSpeedMeter';
+import { BannerAdView } from '@/components/ads/BannerAdView';
 import { useApp } from '@/context/AppContext';
 import { colorsFor } from '@/theme/theme';
 
@@ -78,6 +79,7 @@ export default function HomeScreen() {
         <View style={styles.serverLine}><Ionicons name="server-outline" size={17} color={C.accent} /><Text style={[styles.serverText, { color: C.subtext }]} numberOfLines={1}>{network.connected ? serverLabel : 'Server unavailable offline'}</Text><Pressable onPress={() => router.push('/servers')}><Text style={[styles.serverAction, { color: C.accent }]}>Details</Text></Pressable></View>
         {test.phase === 'complete' && <Pressable onPress={() => router.push('/analytics')} style={styles.details}><Text style={[styles.detailsText, { color: C.accent }]}>View full analytics</Text><Ionicons name="arrow-forward" size={15} color={C.accent} /></Pressable>}
       </Card>
+      <BannerAdView />
     </Screen>
   );
 }

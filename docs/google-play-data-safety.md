@@ -6,12 +6,12 @@ This document is a preparation worksheet, not legal advice. Final Play Console a
 
 - App: Netora
 - Package: `com.netora.networkutility`
-- Version: `1.0.0` (`versionCode` 1)
+- Version: `1.0.1` (`versionCode` 2)
 - Platform: Android only
 
 ## Collection summary
 
-Netora has no account, ads, analytics, or Netora backend. Test history and preferences remain on-device. However, network functionality sends requests directly from the device to third-party services. Under Google Play definitions, data transmitted off-device may count as collected even if Netora does not retain it.
+Netora has no account or Netora backend. Test history and preferences remain on-device. Network functionality sends requests directly from the device to third-party services, and Netora shows advertisements through Google AdMob. Under Google Play definitions, data transmitted off-device may count as collected/shared even if Netora does not retain it.
 
 ### Likely disclosures
 
@@ -21,14 +21,15 @@ Netora has no account, ads, analytics, or Netora backend. Test history and prefe
 | Approximate location | Derived by optional IP lookup; server map uses server coordinates, not user GPS | Optional for public network details | No | Lookup provider returns/processes it |
 | App activity / diagnostics | Measured speed, ping, jitter, packet loss | User-initiated functionality | Stored locally in History | Not sent to Netora backend; test bytes/requests go to Cloudflare |
 | Device/network identifiers | Wi-Fi SSID/BSSID shown locally when permission granted | Optional | Not stored in history | Not transmitted by Netora intentionally |
+| Advertising ID / device identifiers | Used by Google AdMob to serve and measure ads | Required for ads | No | Shared with Google AdMob; not sold |
 
 ## Security practices
 
 - Data encrypted in transit: Yes, all app endpoints use HTTPS.
 - User can request deletion: No account/server-side data exists; users can delete local history in-app or clear/uninstall app data.
 - Data sale: No.
-- Advertising: No.
-- Tracking: No.
+- Advertising: Yes — Google AdMob (Banner, Native Advanced, Interstitial). EEA/regulated-region users see a UMP consent form; without consent only non-personalized ads are requested.
+- Tracking: Ad measurement is performed by Google AdMob; no separate tracking SDK.
 
 ## Permissions declaration
 
@@ -42,5 +43,7 @@ Netora has no account, ads, analytics, or Netora backend. Test history and prefe
 - [ ] Add monitored support email to policy and Play listing.
 - [ ] Reconfirm every endpoint/SDK in the final release binary.
 - [ ] Complete Play Console Data Safety using the then-current definitions.
+- [ ] In Play Console → App content → Ads, declare "Yes, my app contains ads".
+- [ ] Declare Google AdMob and advertising ID collection/sharing in Data Safety.
+- [ ] Confirm real AdMob ad units are enabled (`EXPO_PUBLIC_PRODUCTION_ADS`) only for the production release binary.
 - [ ] Explain optional location permission in the permission declaration if requested by Play review.
-- [ ] Confirm no analytics/crash SDK is added before release.

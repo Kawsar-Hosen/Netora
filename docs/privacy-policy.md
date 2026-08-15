@@ -30,7 +30,13 @@ Test history and preferences are stored locally using Android application storag
 
 ## Sharing, Advertising, and Analytics
 
-Netora contains no advertising SDK, behavioral analytics SDK, or tracking SDK. Netora does not sell personal information. External infrastructure providers receive standard request information when your device contacts their service.
+Netora shows advertisements through **Google AdMob** (banner, native, and interstitial formats). To serve and measure ads, Google AdMob may access your device's advertising ID, IP address, and coarse ad-request signals. Netora does not store this information and does not operate its own analytics or tracking SDK.
+
+Interstitial ads are shown only after a completed speed test, with a frequency cap, and never while a test is running, while offline, or on error.
+
+For users in the EEA, the UK, and other regulated regions, Netora presents a Google User Messaging Platform (UMP) consent form before requesting ads. If you do not consent to personalized ads, only non-personalized ads are requested. You can review Google's advertising practices at https://policies.google.com/technologies/ads.
+
+Netora does not sell personal information. External infrastructure providers receive standard request information when your device contacts their service.
 
 ## Security
 

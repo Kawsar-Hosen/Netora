@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Card, Header, Label, Metric, Pill, Screen } from '@/components/ui';
+import { NativeAdCard } from '@/components/ads/NativeAdCard';
 import { useApp } from '@/context/AppContext';
 import { colorsFor } from '@/theme/theme';
 import { displaySpeed } from '@/data/units';
@@ -35,6 +36,7 @@ export default function AnalyticsScreen() {
         <Text style={[styles.cardTitle, { color: C.text }]}>Connection profile</Text>
         <View><RowText label="Measured quality" value={quality} C={C} /><RowText label="Transport" value={network.type === 'Mobile data' && network.networkGeneration ? `${network.type} · ${network.networkGeneration}` : network.type} C={C} /><RowText label="Signal strength" value={network.signal != null ? `${network.signal}%` : 'Unavailable'} C={C} /><RowText label="ISP / carrier" value={provider ?? 'Unavailable'} C={C} /><RowText label="Test server" value={network.connected ? server : 'Unavailable'} C={C} /></View>
       </Card>
+      <NativeAdCard />
     </Screen>
   );
 }

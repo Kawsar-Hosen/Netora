@@ -3,6 +3,7 @@ import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
 import { useApp } from "@/context/AppContext";
 import { colorsFor } from "@/theme/theme";
 import { Card, Header, Metric, Screen } from "@/components/ui";
+import { BannerAdView } from "@/components/ads/BannerAdView";
 import { displaySpeed } from "@/data/units";
 export default function HistoryScreen() {
   const { dark, history, clearHistory, removeResult, unit } = useApp();
@@ -77,6 +78,7 @@ export default function HistoryScreen() {
           </Card>
         ))
       )}
+      <BannerAdView />
     </Screen>
   );
 }

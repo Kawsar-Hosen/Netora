@@ -62,20 +62,20 @@ Requires Android 6.0 (API 23) or later. An internet connection is needed to run 
 
 | Asset | Specification | Source |
 |---|---|---|
-| App icon | 512x512 PNG (Play generates the round icon) | `assets/icon.png` (already used in the build) |
-| Feature graphic | 1024x500 PNG, no transparent background, max 1MB | **REQUIRED — not created yet** |
-| Phone screenshots | 2–8 per phone form factor, min 320px wide, recommended 1080x1920 (portrait) | **REQUIRED — take from the tested app** |
+| App icon | 512x512 PNG (Play generates the round icon) | `assets/icon.png` (1024x1024 RGBA, already used in the build) |
+| Feature graphic | 1024x500 PNG, no alpha, max 1MB | **DONE** — `store-assets/feature-graphic.png` (1024x500 RGB, 64KB) |
+| Phone screenshots | 2–8 per phone form factor, min 320px wide, recommended 1080x1920 (portrait) | **REQUIRED** — take from the tested app; helper: `bash store-assets/capture-screenshots.sh` |
 | 7-inch/10-inch tablet screenshots | Optional, 2–8 each | Optional |
 | TV / Wear / Auto | Not required | N/A |
 
 Screenshot guidance (Play will review them):
-- Take real screenshots of Home (speed test), Analytics, Servers/map, History, Settings.
+- Take real screenshots of Home (speed test), Analytics, Servers/map, History, Settings — in that order.
 - No mock browsers, no placeholder frames, no unclear text overlays.
-- Portrait 1080x1920 works for both 5.5" and 6.5" displays when exported via `adb exec-out screencap -p`.
+- The helper script captures at 1080x1920 via `adb exec-out screencap -p` while you navigate the app.
 
-`adb` capture command (device connected, USB debugging on):
+Manual `adb` capture (device connected, USB debugging on):
 ```
-adb exec-out screencap -p > home.png
+adb exec-out screencap -p > speedtest.png
 ```
 
 ---

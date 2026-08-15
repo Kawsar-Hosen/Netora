@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1520"/>
+      <stop offset="0.55" stop-color="#101722"/>
+      <stop offset="1" stop-color="#182330"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BFEAD7" stop-opacity="0"/>
+      <stop offset="1" stop-color="#BFEAD7" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background (opaque, full bleed) -->
+  <rect width="1024" height="500" fill="url(#bg)"/>
+  <rect x="640" y="0" width="384" height="500" fill="url(#glow)"/>
+
+  <!-- Subtle signal arcs top-right -->
+  <path d="M900 90 a150 150 0 0 1 96 24" fill="none" stroke="#43D6E8" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M940 60 a200 200 0 0 1 96 28" fill="none" stroke="#43D6E8" stroke-width="4" stroke-linecap="round" opacity="0.22"/>
+  <circle cx="1008" cy="168" r="7" fill="#43D6E8" opacity="0.5"/>
+  <circle cx="836" cy="118" r="5" fill="#43D6E8" opacity="0.35"/>
+
+  <!-- Logo mark (scaled from netora-icon-source.svg) -->
+  <g transform="translate(45 45) scale(0.4)">
+    <circle cx="512" cy="512" r="315" fill="#182330" stroke="#293744" stroke-width="8"/>
+    <path d="M315 682V355c0-34 42-49 64-23l266 318V342" fill="none" stroke="#BFEAD7" stroke-width="82" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M602 249c76 22 135 80 160 154" fill="none" stroke="#43D6E8" stroke-width="34" stroke-linecap="round"/>
+    <path d="M627 173c110 32 196 116 231 223" fill="none" stroke="#43D6E8" stroke-width="24" stroke-linecap="round" opacity="0.72"/>
+    <circle cx="315" cy="682" r="38" fill="#43D6E8"/>
+    <circle cx="665" cy="342" r="38" fill="#43D6E8"/>
+  </g>
+
+  <!-- App name + tagline -->
+  <text x="470" y="212" font-family="sans-serif" font-size="96" font-weight="700" fill="#BFEAD7" letter-spacing="4">Netora</text>
+  <text x="472" y="272" font-family="sans-serif" font-size="30" font-weight="600" fill="#E8F1EE" letter-spacing="1">Speed Test &amp; Network Diagnostics</text>
+  <text x="472" y="330" font-family="sans-serif" font-size="21" font-weight="400" fill="#9DB0B1" letter-spacing="2">Wi-Fi · Mobile · Ping · Jitter · Packet Loss</text>
+
+  <g transform="translate(472 372)">
+    <rect x="0" y="0" width="30" height="3" rx="1.5" fill="#43D6E8"/>
+    <rect x="38" y="0" width="30" height="3" rx="1.5" fill="#3E78E7"/>
+    <rect x="76" y="0" width="30" height="3" rx="1.5" fill="#BFEAD7" opacity="0.6"/>
+  </g>
+
+  <text x="472" y="432" font-family="sans-serif" font-size="18" font-weight="400" fill="#64757D" letter-spacing="3">BY XYTEEE</text>
+</svg>

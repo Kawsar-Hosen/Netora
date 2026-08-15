@@ -39,8 +39,8 @@ Netora has no account or Netora backend. Test history and preferences remain on-
 
 ## Store submission checklist
 
-- [ ] Publish `privacy-policy.html` at a stable public HTTPS URL.
-- [ ] Add monitored support email to policy and Play listing.
+- [x] Publish `privacy-policy.html` at a stable public HTTPS URL: `https://xyteee.com/netora/privacy-policy`
+- [x] Add monitored support email to policy and Play listing: `support@xyteee.com`
 - [ ] Reconfirm every endpoint/SDK in the final release binary.
 - [ ] Complete Play Console Data Safety using the then-current definitions.
 - [ ] In Play Console → App content → Ads, declare "Yes, my app contains ads".

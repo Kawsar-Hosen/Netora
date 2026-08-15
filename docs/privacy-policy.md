@@ -52,7 +52,5 @@ This policy may be updated when app features or service providers change. The ef
 
 ## Contact and Public URL
 
-Before Google Play publication, replace the placeholders below and publish this policy at a stable public HTTPS URL.
-
-- Support email: `[ADD MONITORED SUPPORT EMAIL]`
-- Public policy URL: `[ADD PUBLIC HTTPS URL]`
+- Support email: `support@xyteee.com`
+- Public policy URL: `https://xyteee.com/netora/privacy-policy`

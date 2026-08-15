@@ -185,3 +185,35 @@ immediately before the Play Store upload. The current build serves Google test a
 2. Closed testing track (optional): invite testers for a staged rollout.
 3. Production track: upload the real-ads AAB, run Play review.
 4. Bump `versionCode` for every subsequent build (current: 2).
+
+## 12. Release notes (What's new — v1.0.1, first release)
+
+```
+Welcome to Netora! Measure your internet speed and diagnose your network with one tap. This first release includes download/upload speed tests, ping, jitter and packet-loss analysis, Wi-Fi and mobile data diagnostics, an optional public network lookup, a server map, full history and dark/light themes.
+```
+
+## 13. Manual steps in Play Console (the user's part)
+
+Everything below is answered in sections 3–9 and in `store-assets/store-listing.txt`; the steps are the user's to click through.
+
+**Setup / account**
+1. Open https://play.google.com/console → create app entry: App name `Netora - Speed Test`, default language English (US), app or game = App, free. (Free is recommended; IAP not planned.)
+2. Complete the dashboard: Promotional content → app icon (upload `assets/icon.png`), feature graphic (`store-assets/feature-graphic.png`), screenshots (user's own captures), short/full description and category from `store-assets/store-listing.txt`.
+
+**App content**
+3. Privacy policy: add `https://xyteee.com/netora/privacy-policy`.
+4. Ads declaration → "Does your app contain ads?" → **Yes**.
+5. Data safety → complete per section 3 table.
+6. Content rating → answer per section 5 (result: Everyone).
+7. Target audience → 13+ (section 6).
+8. App access → "All functionality is accessible without special access" (section 7).
+9. Permissions → confirm declared permissions per section 8.
+
+**Release**
+10. Production → create release → upload the **real-ads AAB** (rebuilt with `EXPO_PUBLIC_PRODUCTION_ADS=1`, section 10) → release notes from section 12.
+11. Enable Play App Signing (default) — the EAS upload key (`OVmDwTdS9j`) signs uploads; back it up first.
+12. Complete the review checklist and click "Send for review".
+
+**Pre-upload actions for the developer**
+- [ ] Back up the EAS keystore: `eas credentials` → Android → Keystore → Download.
+- [ ] Approve the final real-ads AAB build (developer builds it when ready).

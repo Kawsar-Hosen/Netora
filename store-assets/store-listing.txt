@@ -1,0 +1,58 @@
+NETORA — GOOGLE PLAY STORE LISTING (copy-paste ready)
+======================================================
+Developer: XYTEEE
+Support email: support@xyteee.com
+Website: https://xyteee.com
+Privacy policy URL: https://xyteee.com/netora/privacy-policy
+Package: com.netora.networkutility
+
+APP NAME (max 30 chars)
+-----------------------
+Netora - Speed Test
+
+SHORT DESCRIPTION (max 80 chars)
+--------------------------------
+Netora - Wi-Fi and mobile data speed test with ping, jitter, packet loss and full network diagnostics.
+
+FULL DESCRIPTION
+----------------
+Netora is a fast, local-first speed test and network diagnostic tool for Android.
+
+Run one-tap speed tests to measure download, upload, ping, jitter and packet loss. Netora works over Wi-Fi, mobile data and Ethernet, and keeps full control on your device.
+
+FEATURES
+• One-tap speed test — real download and upload throughput, clearly separated
+• Latency analysis — ping, jitter and packet-loss estimation from real samples
+• Live network details — Wi-Fi or mobile data, signal info, local IP, carrier and network generation
+• Wi-Fi name (SSID/BSSID) — optional, shown locally when you grant permission
+• Public network info — optional public IP, IP version, ISP, ASN and approximate city/country
+• Server map — see the Cloudflare edge that serves your test, with map and edge details
+• Full analytics — per-test breakdown and connection-quality grading
+• History — browse, compare and delete past results; everything stays on your device
+• Offline-aware — clear status and no interruptions when the network drops
+• Dark and light themes — automatic or manual
+
+PRIVACY BY DESIGN
+Netora has no account system and no Netora backend. Speed-test history and preferences are stored only on your device. No GPS coordinates are read. External lookups are optional and never written to history. Netora contains ads served by Google AdMob; ad behavior and your choices are described in the Privacy Policy.
+
+Requires Android 6.0 (API 23) or later. An internet connection is needed to run speed tests.
+
+CATEGORY
+--------
+Tools
+
+TAGS (choose up to 5)
+---------------------
+Speed test, Wi-Fi, Internet, Network, Diagnostics
+
+RELEASE NOTES (What's new — v1.0.1, first public release)
+--------------------------------------------------------
+Welcome to Netora! Measure your internet speed and diagnose your network with one tap. This first release includes download/upload speed tests, ping, jitter and packet-loss analysis, Wi-Fi and mobile data diagnostics, an optional public network lookup, a server map, full history and dark/light themes.
+
+OTHER PLAY CONSOLE FIELDS
+-------------------------
+- News app: No
+- Financial features: No
+- Government apps: No
+- Primary target audience age: 13+
+- Ads: Yes — Google AdMob (banner, native advanced, interstitial)

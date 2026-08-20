@@ -2,7 +2,7 @@
   "expo": {
     "name": "Netora",
     "slug": "netora",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icon": "./assets/icon.png",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -12,10 +12,10 @@
     ],
     "android": {
       "package": "com.netora.networkutility",
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#101722"
+        "backgroundColor": "#00071D"
       },
       "permissions": [
         "ACCESS_NETWORK_STATE",
@@ -41,12 +41,12 @@
         "expo-splash-screen",
         {
           "image": "./assets/splash.png",
-          "imageWidth": 1242,
+          "imageWidth": 280,
           "resizeMode": "contain",
-          "backgroundColor": "#101722",
+          "backgroundColor": "#00071D",
           "dark": {
             "image": "./assets/splash.png",
-            "backgroundColor": "#101722"
+            "backgroundColor": "#00071D"
           }
         }
       ],
